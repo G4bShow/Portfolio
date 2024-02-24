@@ -417,7 +417,7 @@ footer {
 
     }
     .img-port {
-        width: 100px;
+        width: 300px;
         max-width: 360px;
         margin: 0 auto;
 
@@ -425,4 +425,5 @@ footer {
     section.portifolio .flex {
         gap: 50px;
     }
+    
 }

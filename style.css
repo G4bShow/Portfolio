@@ -11,14 +11,6 @@ body {
     height: 100vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 150px;
-}
-
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -26,6 +18,13 @@ main {
 
 .flex {
     display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 150px;
 }
 
 .dev-contato button {
@@ -36,6 +35,7 @@ main {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .5s;
 
 }
 
@@ -74,7 +74,7 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
 
@@ -86,7 +86,7 @@ header nav ul {
 
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -103,7 +103,71 @@ header.dev-contato button {
     transition: .2s;
 
 }
+/*estylo do mobile*/
+.btn-abrir-menu{
+    display: none;
+}
 
+.menu-mobile {
+    background-color: #f30707;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden; 
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.btn-abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+
+}
+
+.menu-mobile .btn-fechar i{
+    color: #00ff08;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+
+.menu-mobile nav ul li a:hover{
+    color: #050303;
+    background-color: #00ff08;
+}
+
+.btn-abrir-menu i{
+    color: #00ff08;
+    font-size: 40px;
+
+}
+.overlay-menu{
+    background-color: #ff000085;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 88888;
+    display: none;
+}
 
 /*stylo do site*/
 section.topo-do-site {
@@ -132,7 +196,7 @@ section.top-do-site .flex {
     margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site {
+.topo-do-site .img-topo-site img {
     /*imagem flutuante*/
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -347,11 +411,19 @@ footer {
 }
 
 @media screen and (max-width: 1020px) {
+    .logo {
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
 
     /*classes gearis*/
     .flex {
         flex-direction: column;
         margin: 0 auto;
+        gap: 50px;
     }
     
     h2.titulo{
@@ -387,13 +459,12 @@ footer {
     }
 
     .topo-do-site h1 {
-        color: #fff;
         font-size: 30px;
        
 
     }
 
-    .topo-do-site .img-topo-site {
+    .topo-do-site .img-topo-site img {
         /*imagem flutuante*/
         width: 100%;
         margin: 0 auto;
@@ -435,5 +506,8 @@ footer {
     section.portifolio .flex {
         gap: 50px;
     }
-    
+    /*RODAPÉ*/
+    footer .line-footer {
+        text-align: center;
+    }
 }

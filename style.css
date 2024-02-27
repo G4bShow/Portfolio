@@ -145,7 +145,7 @@ section.top-do-site .flex {
 .img-topo-site>img {
     width: 100%;
     height: 100%;
-
+    
 }
 
 @keyframes flutuar {
@@ -351,6 +351,7 @@ footer {
     /*classes gearis*/
     .flex {
         flex-direction: column;
+        margin: 0 auto;
     }
     
     h2.titulo{
@@ -362,7 +363,13 @@ footer {
     .topo-do-site .flex {
         flex-direction: column-reverse;
     }
-
+    .img-topo-site>img {
+        width: 300px;
+        max-width: 360px;
+        padding: 20px 8%;
+        gap: 80px;
+    
+    }
     /*cabeçario*/
     .menu-desktop,
     .dev-contato {
@@ -372,6 +379,7 @@ footer {
     /*TOPO DO SITE*/
     section.top-do-site .flex {
         gap: 50px;
+        
     }
 
     .section.topo-do-site {
@@ -381,12 +389,14 @@ footer {
     .topo-do-site h1 {
         color: #fff;
         font-size: 30px;
+       
 
     }
 
     .topo-do-site .img-topo-site {
         /*imagem flutuante*/
         width: 100%;
+        margin: 0 auto;
     }
 
     /*ESPECIALIDADES*/

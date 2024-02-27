@@ -109,7 +109,7 @@ header.dev-contato button {
 }
 
 .menu-mobile {
-    background-color: #f30707;
+    background-color: #080303b4;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -413,6 +413,9 @@ footer {
 @media screen and (max-width: 1020px) {
     .logo {
         display: none;
+    }
+    .menu-desktop{
+        visibility: hidden;
     }
 
     .btn-abrir-menu{

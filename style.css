@@ -36,7 +36,6 @@ main {
     border-radius: 30px;
     cursor: pointer;
     transition: .5s;
-
 }
 
 h2.titulo {
@@ -83,7 +82,6 @@ header nav.menu-desktop a:hover {
 
 header nav ul {
     list-style: none;
-
 }
 
 header nav.menu-desktop ul li {
@@ -101,9 +99,8 @@ header.dev-contato button {
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
-
 }
-/*estylo do mobile*/
+/*Stylo of mobile*/
 .btn-abrir-menu{
     display: none;
 }
@@ -169,7 +166,7 @@ header.dev-contato button {
     display: none;
 }
 
-/*stylo do site*/
+/*stylo of site*/
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -197,7 +194,7 @@ section.top-do-site .flex {
 }
 
 .topo-do-site .img-topo-site img {
-    /*imagem flutuante*/
+    /*floating image*/
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 10px;
@@ -222,7 +219,7 @@ section.top-do-site .flex {
     }
 }
 
-/*STYLO DAS SPECIALIDADES*/
+/*specialty style*/
 
 section.especialidades {
     padding: 10px;
@@ -234,7 +231,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box {
     color: #fff;
-    padding: 40px;
+    padding: 20px;
     border: 2px solid #fff;
     margin-top: 45px;
     border-radius: 20px;
@@ -255,8 +252,14 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box h3 {
     font-size: 28px;
-    margin: 15% 0;
+}
 
+.especialidades .especialidades-box > p {
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    text-indent: 2em;
+    margin-top: 12%;
 }
 
 section.sobre .flex {
@@ -422,7 +425,7 @@ footer {
         display: block;
     }
 
-    /*classes gearis*/
+    /*general classes*/
     .flex {
         flex-direction: column;
         margin: 0 auto;
@@ -445,13 +448,13 @@ footer {
         gap: 80px;
     
     }
-    /*cabeçario*/
+    /*header*/
     .menu-desktop,
     .dev-contato {
         display: none;
     }
 
-    /*TOPO DO SITE*/
+    /*TOP of Site*/
     section.top-do-site .flex {
         gap: 50px;
         
@@ -468,12 +471,12 @@ footer {
     }
 
     .topo-do-site .img-topo-site img {
-        /*imagem flutuante*/
+        /*floating image*/
         width: 100%;
         margin: 0 auto;
     }
 
-    /*ESPECIALIDADES*/
+    /*specialties*/
     section.especialidades {
         padding: 40px 8%;
 
@@ -509,7 +512,7 @@ footer {
     section.portifolio .flex {
         gap: 50px;
     }
-    /*RODAPÉ*/
+    /*baseboard*/
     footer .line-footer {
         text-align: center;
     }
